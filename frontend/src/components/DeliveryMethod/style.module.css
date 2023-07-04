@@ -1,0 +1,19 @@
+.deliveryContainer {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 2rem 0 2rem 0;
+}
+.info {
+  display: flex;
+}
+.input {
+  margin: 7px 2rem 0 0;
+  display: flex;
+  align-self: flex-start;
+  cursor: pointer;
+}
+.title {
+  margin-right: 2rem;
+  font-weight: bold;
+}

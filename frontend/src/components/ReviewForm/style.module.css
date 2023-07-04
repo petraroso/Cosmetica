@@ -1,0 +1,44 @@
+.reviewFormContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 2rem 0;
+}
+
+.alert {
+  height: 2rem;
+  background-color: #ff85ba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 2rem 0;
+}
+.input {
+  height: 7rem;
+  font-family: inherit;
+  font-size: inherit;
+  resize: none;
+}
+.input:focus {
+  outline: none;
+}
+.select {
+  outline: 0;
+  font: inherit;
+  width: 14rem;
+  height: 2rem;
+  color: black;
+  cursor: pointer;
+  margin: 2rem 0 2rem 0;
+}
+.submitButton {
+  height: 2rem;
+  width: fit-content;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.submitButton:hover {
+  cursor: pointer;
+  color: #ff85ba;
+}

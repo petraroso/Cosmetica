@@ -1,0 +1,33 @@
+.subtotalContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 2rem 0 4rem 0;
+}
+.price {
+  align-self: flex-end;
+  margin-bottom: 3rem;
+}
+.buttonsContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+.buttonsContainer > button {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+.disabledButton{
+  display:none;
+}
+.buttonsContainer > button:hover{
+  color: #ff85ba;
+}

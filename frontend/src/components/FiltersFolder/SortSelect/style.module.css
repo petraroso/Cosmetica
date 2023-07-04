@@ -1,0 +1,9 @@
+.select {
+    outline: 0;
+    font: inherit;
+    width: 17rem;
+    height: 2rem;
+    color: black;
+    cursor: pointer;
+    margin: 2rem 2rem 1rem 2rem;
+  }

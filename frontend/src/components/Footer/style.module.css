@@ -1,0 +1,35 @@
+.footerContainer {
+  padding: 3rem;
+  background-color: black;
+  color: white;
+}
+.footerContainer > div {
+  display: flex;
+  justify-content: space-around;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.title {
+  font-weight: bold;
+  height: 2rem;
+}
+.icon:hover,
+.link:hover {
+  cursor: pointer;
+  color: #ff85ba;
+}
+.otherPlatforms {
+  padding-top: 1rem;
+}
+.icon {
+  height: 1.7rem;
+  width: 1.7rem;
+  padding-top: 0.6rem;
+  padding-right: 1.5rem;
+}
+.copyright {
+  margin-top: 3rem;
+}

@@ -1,0 +1,18 @@
+.orderCartSummaryContainer {
+  margin: 2rem 0 2rem 0;
+}
+.finishOrderButton {
+  height: 2rem;
+  width: 17rem;
+  margin: 0 0 2rem 0;
+  background-color: rgba(255, 0, 0, 0.37);
+  cursor: pointer;
+}
+.button {
+  color: red;
+  cursor: pointer;
+}
+.buttonDisabled {
+  color: gray;
+  cursor: none;
+}

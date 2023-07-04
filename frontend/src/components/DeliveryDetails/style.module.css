@@ -1,0 +1,11 @@
+.deliveryContainer {
+  margin: 2rem 0 2rem 0;
+}
+.errorAlert {
+  height: 2rem;
+  background-color: #ff85ba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 1rem 0;
+}

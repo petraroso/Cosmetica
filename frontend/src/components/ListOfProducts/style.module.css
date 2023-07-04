@@ -1,0 +1,36 @@
+.cardLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  justify-content: center;
+}
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
+  gap: 5px;
+}
+.pagination .pageNum {
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 400;
+}
+.pagination .pageNum:hover {
+  background-color: #ff85ba;
+  color: white;
+}
+.pagination .active {
+  background-color: #ff85ba;
+}
+
+@media only screen and (min-width: 600px) {
+  .cardLayout {
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 16rem));
+    margin: 4rem 2rem 4rem 2rem;
+  }
+}
+

@@ -1,0 +1,24 @@
+.orderCartSummaryContainer {
+  margin: 2rem 0 2rem 0;
+}
+.finishOrderButton {
+  height: 2rem;
+  width: 50%;
+  margin: 0 0 2rem 0;
+  font-weight: bold;
+  border: none;
+  background-color: black;
+  color: white;
+}
+.finishOrderButton:hover {
+  color: #ff85ba;
+  cursor: pointer;
+}
+.disabledButton {
+  height: 2rem;
+  width: 50%;
+  margin: 0 0 2rem 0;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+}

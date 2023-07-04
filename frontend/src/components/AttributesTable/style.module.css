@@ -1,0 +1,11 @@
+.tableContainer {
+  display: flex;
+  align-items: stretch;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.table {
+  margin: 2rem 0 2rem 0;
+  border-collapse: collapse;
+  flex: 1;
+}

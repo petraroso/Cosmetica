@@ -1,0 +1,101 @@
+.title {
+  margin: 2rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.input {
+  outline: none;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+.textarea {
+  height: 10rem;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  font-size: inherit;
+  resize: none;
+  outline: none;
+}
+
+.container > select {
+  outline: 0;
+  font: inherit;
+  width: 45%;
+  height: 37.2px;
+  color: black;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.column > select {
+  outline: 0;
+  font: inherit;
+  height: 37.2px;
+  color: black;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.chooseAtribute {
+  display: flex;
+  justify-content: space-between;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.cardImage {
+  width: 14rem;
+  height: 11rem;
+  object-fit: cover;
+}
+.attributeHelp {
+  color: gray;
+  display: flex;
+  justify-content: center;
+  margin: -0.7rem 0 1.5rem 0;
+}
+.textareaLabelCategory {
+  margin-bottom: 2rem;
+}
+.imagesContainer {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.imagesLayout {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0 2rem 0;
+}
+.cardImage {
+  width: 15rem;
+  margin: 0 1rem 1rem 0;
+}
+.deleteImage {
+  width: 1.7rem;
+  height: 1.7rem;
+  position: absolute;
+  left: 13rem;
+  top: 0.5rem;
+  background-color: rgba(220, 220, 220, 0.6);
+}
+.deleteImage:hover {
+  cursor: pointer;
+  color: #ff85ba;
+}
+.submitButton {
+  margin: 2rem;
+  height: 2rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.submitButton:hover {
+  cursor: pointer;
+  color: #ff85ba;
+}

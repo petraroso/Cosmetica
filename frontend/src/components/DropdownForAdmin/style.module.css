@@ -1,0 +1,27 @@
+.dropdownContainer {
+  position: absolute;
+  z-index: 100;
+  background-color: white;
+  padding: 0.7rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0.1rem;
+
+  right: 1rem;
+  top: calc(100% - 0.7rem);
+}
+.dropdownList {
+  display: flex;
+  flex-direction: column;
+}
+
+.adminLink,
+.link {
+  text-decoration: none;
+  color: black;
+  align-self: start;
+  margin: 0.7rem;
+}
+.link:hover {
+  color: #ff85ba;
+  cursor: pointer;
+}

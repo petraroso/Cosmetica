@@ -1,0 +1,6 @@
+.icon {
+  cursor: pointer;
+}
+.disabledIcon {
+  display: none;
+}

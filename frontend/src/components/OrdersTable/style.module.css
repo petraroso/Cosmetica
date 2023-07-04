@@ -1,0 +1,36 @@
+.tableTitle {
+  margin-left: 2rem;
+}
+.tableContainer {
+  display: flex;
+  align-items: stretch;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.table {
+  margin: 2rem;
+  border-collapse: collapse;
+  flex: 1;
+}
+th,
+td {
+  padding: 0.6rem;
+  text-align: left;
+}
+th {
+  background-color: black;
+  color: white;
+}
+.tableRow:nth-of-type(even) {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+.link {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+.link:hover {
+  color: #ff85ba;
+  cursor: pointer;
+}

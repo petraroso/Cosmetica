@@ -1,0 +1,19 @@
+.paymentContainer {
+  margin: 2rem 0 2rem 0;
+}
+.paymentContainer > select {
+  outline: 0;
+  font: inherit;
+  width: 17rem;
+  height: 2rem;
+  color: black;
+  cursor: pointer;
+}
+.errorAlert {
+  height: 2rem;
+  background-color: rgba(255, 0, 0, 0.37);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 1rem 0;
+}

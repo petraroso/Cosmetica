@@ -1,0 +1,42 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+}
+.select {
+  outline: 0;
+  font: inherit;
+  width: 17rem;
+  height: 2rem;
+  color: black;
+  cursor: pointer;
+  margin: 2rem 2rem 1rem 2rem;
+}
+.categoryFilterContainer {
+  margin: 1rem 2rem 1rem 2rem;
+}
+.sliderContainer {
+  margin: 1rem 2rem 1rem 2rem;
+}
+.slider {
+  width: 17rem;
+  outline: none;
+  transition: 0.3s;
+}
+.ratingFilterContainer {
+  margin: 1rem 2rem 1rem 2rem;
+}
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  height: 2rem;
+  margin: 1rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+.button:hover {
+  cursor: pointer;
+  color: #ff85ba;
+}

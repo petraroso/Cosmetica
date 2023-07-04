@@ -1,0 +1,83 @@
+.header {
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  align-items: center;
+  position: relative;
+  justify-self: start;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: gainsboro;
+}
+.headerIcons {
+  justify-self: end;
+  display: flex;
+}
+.userIcon,
+.dropdownIcon,
+.icon {
+  margin: 0.7rem;
+  cursor: pointer;
+}
+.itemsInCart {
+  position: absolute;
+  right: 1.1rem;
+  top: calc(100% - 3.5rem);
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #ff85ba;
+  color: white;
+  border-radius: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brandName {
+  justify-self: center;
+  cursor: pointer;
+  color: black;
+}
+.login {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.login:hover {
+  color: #ff85ba;
+}
+.searchBarContainer {
+  background-color: gainsboro;
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+.searchBar {
+  width: 100%;
+  padding-left: 1rem;
+}
+.searchButton {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.searchButton:hover {
+  cursor: pointer;
+  color: #ff85ba;
+}
+
+@media only screen and (min-width: 930px) {
+  .searchBarContainer {
+    justify-content: center;
+  }
+  .searchBar {
+    width: 50%;
+  }
+  .dropdownIcon {
+    display: none;
+  }
+}

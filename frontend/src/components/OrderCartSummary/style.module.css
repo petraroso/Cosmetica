@@ -1,0 +1,18 @@
+.orderCartSummaryContainer {
+  margin: 2rem 0 2rem 0;
+}
+.button {
+  height: 2rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.button:hover {
+  cursor: pointer;
+  color: #ff85ba;
+}
+.buttonDisabled {
+  color: gray;
+  cursor: none;
+}

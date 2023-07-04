@@ -1,0 +1,11 @@
+.tableRow:nth-of-type(even) {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+.icon {
+  height: 1.7rem;
+  width: 1.7rem;
+}
+.icon:hover {
+  color: #ff85ba;
+  cursor: pointer;
+}

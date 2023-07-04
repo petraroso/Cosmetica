@@ -1,0 +1,8 @@
+.successAlert {
+  height: 2rem;
+  background-color: rgba(0, 0, 255, 0.36);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,47 @@
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 25% 2rem 25%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+.logged {
+  margin-bottom: 1rem;
+}
+.loginButton {
+  height: 2rem;
+  margin-bottom: 1rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+.loginButton:hover {
+  cursor: pointer;
+  color: #ff85ba;
+}
+.register {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.link {
+  text-decoration: none;
+  color: rgba(0, 0, 255, 0.6);
+}
+.link:hover {
+  color: #ff85ba;
+}
+.errorAlert {
+  height: 2rem;
+  color: #ff85ba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}

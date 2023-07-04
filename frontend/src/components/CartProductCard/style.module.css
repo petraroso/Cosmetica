@@ -1,0 +1,39 @@
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  margin: 2rem 0 2rem 0;
+}
+.imageAndTitle {
+  display: flex;
+  align-items: center;
+  width: 75%;
+}
+.cardImage {
+  width: 10rem;
+  height: 7rem;
+  object-fit: cover;
+  margin-right: 2rem;
+}
+.cardBrand {
+  margin-right: 2rem;
+}
+.selectAndDelete > select {
+  outline: 0;
+  font: inherit;
+  width: 3rem;
+  height: 2rem;
+  color: black;
+  cursor: pointer;
+}
+.selectAndDelete {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+option:focus {
+  outline: none;
+}
+

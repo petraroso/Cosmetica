@@ -1,0 +1,15 @@
+.adminNavigationContainer {
+  width: 10rem;
+  height: fit-content;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+.adminNavigationContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.link {
+  color: gray;
+  text-decoration: none;
+  margin: 1rem;
+}

@@ -1,0 +1,94 @@
+.title {
+  margin: 2rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.input {
+  outline: none;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+.textarea {
+  height: 10rem;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  font-size: inherit;
+  resize: none;
+  outline: none;
+}
+.select,
+.container > select {
+  outline: 0;
+  font: inherit;
+  height: 37.2px;
+  color: black;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.column > select {
+  outline: 0;
+  font: inherit;
+  height: 37.2px;
+  color: black;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.chooseAtribute {
+  display: flex;
+  justify-content: space-between;
+}
+
+.categoryContainer {
+  display: flex;
+  margin-top: 2rem;
+}
+.closeIcon {
+  height: 1.7rem;
+  width: 1.7rem;
+  margin-left: 2rem;
+}
+.closeIcon:hover {
+  color: #ff85ba;
+  cursor: pointer;
+}
+.attributeHelp {
+  color: gray;
+  display: flex;
+  justify-content: center;
+  margin: -0.7rem 0 1.5rem 0;
+}
+.imagesContainer {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputField {
+  margin: 2rem 0 2rem 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+}
+.inputField:hover {
+  cursor: pointer;
+}
+.submitButton {
+  margin: 0 2rem 2rem 2rem;
+  height: 2rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.submitButton:hover {
+  cursor: pointer;
+  color: #ff85ba;
+}

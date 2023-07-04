@@ -1,0 +1,31 @@
+.alertContainer {
+  margin: 0 0 2rem 0;
+  background-color: #c2d9ff;
+  padding: 2rem;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+.title > h3 {
+  margin-top: 0;
+}
+.buttonBack {
+  height: 2rem;
+  margin-right: 2rem;
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+}
+.buttonCart:hover,
+.buttonBack:hover {
+  cursor: pointer;
+  background-color: black;
+}
+.buttonCart {
+  height: 2rem;
+  background-color: #ff85ba;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}

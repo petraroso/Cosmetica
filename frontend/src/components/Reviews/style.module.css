@@ -1,0 +1,19 @@
+.reviewContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.username{
+  margin-left: 1rem;
+  font-weight: bold;
+  font-size: 13px;
+}
+.date {
+  margin-left: 1rem;
+  color: gray;
+}

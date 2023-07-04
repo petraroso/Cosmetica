@@ -1,0 +1,28 @@
+.discountContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 2rem 0;
+}
+.textareaLabel {
+  margin-bottom: 1rem;
+}
+.input {
+  height: 2rem;
+  width: 40%;
+  margin-bottom: 1rem;
+}
+.button {
+  height: 37.2px;
+  width: 3rem;
+  margin-bottom: 1rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button:hover {
+  color: #ff85ba;
+}

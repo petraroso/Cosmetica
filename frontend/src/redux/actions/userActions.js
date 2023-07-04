@@ -1,0 +1,20 @@
+import { LOGIN_USER, LOGOUT_USER } from "../constants/userConstants";
+import axios from "axios";
+
+export const setReduxUserState = (userCreated) => (dispatch) => {
+  dispatch({
+    type: LOGIN_USER,
+    payload: userCreated,
+  });
+};
+
+export const logout = () => (dispatch) => {
+  document.location.href = "/login";
+  //making get request to api logout endpoint
+  axios.get("/api/logout");
+  localStorage.removeItem("userInfo");
+  sessionStorage.removeItem("userInfo");
+  localStorage.removeItem("cart");
+  sessionStorage.removeItem("cart");
+  dispatch({ type: LOGOUT_USER });
+};
