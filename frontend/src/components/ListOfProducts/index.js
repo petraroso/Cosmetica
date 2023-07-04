@@ -35,7 +35,7 @@ export default function ListOfProducts({
   useEffect(() => {
     getProducts(categoryName, searchQuery, filters, sortOption)
       .then((products) => {
-        console.log("Fetched products:", products);
+        //console.log("Fetched products:", products);
         setProducts(products.products);
         setLoading(false);
       })
@@ -43,7 +43,7 @@ export default function ListOfProducts({
         console.log(er);
         setError(true);
       });
-    console.log("Category name:", categoryName);
+    //console.log("Category name:", categoryName);
   }, [getProducts, searchQuery, filters, sortOption, categoryName]);
 
   useEffect(() => {

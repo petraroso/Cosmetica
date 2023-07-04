@@ -22,7 +22,7 @@ export default function UserOrderDetailsPage({
   const [buttonDisabled, setButtonDisabled] = useState(false);
 
   const paypalContainer = useRef();
-  console.log(paypalContainer);
+  //console.log(paypalContainer);
 
   const { id } = useParams();
 
