@@ -2,11 +2,17 @@
   margin: 2rem 0 2rem 0;
 }
 .button {
-  height: 2rem;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
   background-color: black;
   color: white;
   font-weight: bold;
-  border: none;
+  font-size: 16px;
 }
 .button:hover {
   cursor: pointer;

@@ -4,5 +4,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 7rem;
+}
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+}
+.buttonsContainer > button {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 7rem;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+.buttonsContainer > button:hover {
+  color: #ff85ba;
 }

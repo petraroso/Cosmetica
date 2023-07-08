@@ -58,7 +58,7 @@ export default function ProductsListPage() {
   const { categories } = useSelector((state) => state.getCategories);
 
   return (
-    <div style={{ display: "flex" }}>
+    <>
       <Filters
         filters={filters}
         setFilters={setFilters}
@@ -66,14 +66,12 @@ export default function ProductsListPage() {
         sortOption={sortOption}
         setSortOption={setSortOption}
       />
-      <div style={{ display: "flex", flexDirection: "column", width: "100%" }}>
-        <ListOfProducts
-          itemsPerPage={6}
-          getProducts={getProducts}
-          sortOption={sortOption}
-          filters={filters}
-        />
-      </div>
-    </div>
+      <ListOfProducts
+        itemsPerPage={6}
+        getProducts={getProducts}
+        sortOption={sortOption}
+        filters={filters}
+      />
+    </>
   );
 }

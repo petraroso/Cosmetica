@@ -38,6 +38,7 @@
   cursor: pointer;
   color: black;
 }
+.basketLink,
 .login {
   text-decoration: none;
   color: black;
@@ -45,12 +46,19 @@
   align-items: center;
   cursor: pointer;
 }
+.userIcon:hover,
+.dropdownIcon:hover,
+.basketLink:hover,
 .login:hover {
   color: #ff85ba;
+}
+.searchIcon {
+  margin: 0.7rem;
 }
 .searchBarContainer {
   background-color: gainsboro;
   display: flex;
+  min-height: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
@@ -78,6 +86,11 @@
     width: 50%;
   }
   .dropdownIcon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .searchIcon {
     display: none;
   }
 }

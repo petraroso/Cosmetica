@@ -1,19 +1,28 @@
-.paymentContainer {
-  margin: 2rem 0 2rem 0;
-}
-.paymentContainer > select {
-  outline: 0;
-  font: inherit;
-  width: 17rem;
+.successAlert {
   height: 2rem;
-  color: black;
-  cursor: pointer;
-}
-.errorAlert {
-  height: 2rem;
-  background-color: rgba(255, 0, 0, 0.37);
+  background-color: rgba(0, 0, 255, 0.36);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem 0 1rem 0;
+  margin-bottom: 7rem;
+}
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+}
+.buttonsContainer > button {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 7rem;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+.buttonsContainer > button:hover {
+  color: #ff85ba;
 }

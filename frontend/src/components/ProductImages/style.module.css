@@ -4,3 +4,8 @@
   object-fit: cover;
   margin: 0 2rem 1rem 0;
 }
+@media only screen and (max-width: 930px) {
+  .image {
+    width: 100%;
+  }
+}

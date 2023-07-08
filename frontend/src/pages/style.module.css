@@ -1,0 +1,9 @@
+.productDetailsPageLayout {
+  display: flex;
+  margin: 2rem;
+}
+@media only screen and (max-width: 930px) {
+  .productDetailsPageLayout {
+    flex-direction: column;
+  }
+}

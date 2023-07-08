@@ -4,6 +4,7 @@ import ProductImages from "../components/ProductImages";
 import ProductDetails from "../components/ProductDetails";
 import Reviews from "../components/Reviews";
 import ReviewForm from "../components/ReviewForm";
+import styles from "./style.module.css";
 
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../redux/actions/cartActions";
@@ -28,18 +29,16 @@ export default function ProductDetailsPage() {
 
   return (
     <>
-      <div style={{ display: "flex", margin: "2rem" }}>
+      <div className={styles.productDetailsPageLayout}>
         <ProductImages getProductDetails={getProductDetails} />
 
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <ProductDetails
-              addToCartReduxAction={addToCart}
-              reduxDispatch={dispatch}
-              getProductDetails={getProductDetails}
-            />
-            <hr style={{ width: "100%", margin: "2rem 0 2rem 0" }}></hr>
-          </div>
+          <ProductDetails
+            addToCartReduxAction={addToCart}
+            reduxDispatch={dispatch}
+            getProductDetails={getProductDetails}
+          />
+          <hr style={{ width: "100%", margin: "2rem 0 2rem 0" }}></hr>
 
           <Reviews
             getProductDetails={getProductDetails}

@@ -2,8 +2,6 @@
   width: 10rem;
   height: fit-content;
   background-color: rgba(128, 128, 128, 0.2);
-}
-.adminNavigationContainer {
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -12,4 +10,9 @@
   color: gray;
   text-decoration: none;
   margin: 1rem;
+}
+@media only screen and (max-width: 930px) {
+  .adminNavigationContainer {
+    display: none;
+  }
 }

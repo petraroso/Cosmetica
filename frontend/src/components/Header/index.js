@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import styles from "./style.module.css";
 import { Link, useNavigate } from "react-router-dom";
-import { RxHamburgerMenu, RxAvatar, RxHeart } from "react-icons/rx";
+import { RxHamburgerMenu, RxAvatar } from "react-icons/rx";
 import { SlBasket } from "react-icons/sl";
 import { GoSearch } from "react-icons/go";
 import Dropdown from "../Dropdown";
@@ -119,20 +119,20 @@ export default function Header() {
             </>
           ) : (
             <Link className={styles.login} to="/login">
-              Login
+              <RxAvatar
+                className={styles.userIcon}
+                style={{ height: "1.7rem", width: "1.7rem" }}
+                onClick={() => setOpenDropdownForUser((prev) => !prev)}
+              />
             </Link>
           )}
 
-          <RxHeart
-            className={styles.icon}
-            style={{ height: "1.7rem", width: "1.7rem" }}
-          />
           {userInfo && userInfo.name && !userInfo.isAdmin ? (
             <>
-              <Link to="/user/cart-details">
+              <Link className={styles.basketLink} to="/user/cart-details">
                 <SlBasket
                   className={styles.icon}
-                  style={{ height: "1.7rem", width: "1.7rem", color: "black" }}
+                  style={{ height: "1.7rem", width: "1.7rem" }}
                 />
               </Link>
               {itemsCount === 0 ? (
@@ -143,16 +143,22 @@ export default function Header() {
             </>
           ) : (
             <>
-              <Link to="/cart">
-                <SlBasket
-                  className={styles.icon}
-                  style={{ height: "1.7rem", width: "1.7rem", color: "black" }}
-                />
-              </Link>
-              {itemsCount === 0 ? (
-                ""
+              {userInfo && userInfo.name && userInfo.isAdmin ? (
+                <></>
               ) : (
-                <div className={styles.itemsInCart}>{itemsCount}</div>
+                <>
+                  <Link className={styles.basketLink} to="/cart">
+                    <SlBasket
+                      className={styles.icon}
+                      style={{ height: "1.7rem", width: "1.7rem" }}
+                    />
+                  </Link>
+                  {itemsCount === 0 ? (
+                    ""
+                  ) : (
+                    <div className={styles.itemsInCart}>{itemsCount}</div>
+                  )}
+                </>
               )}
             </>
           )}
@@ -163,7 +169,7 @@ export default function Header() {
         onKeyUp={submitHandler}
         onChange={(e) => setSearchQuery(e.target.value)}
       >
-        <GoSearch style={{ margin: "0.7rem" }} />
+        <GoSearch className={styles.searchIcon} />
         <input
           type="search"
           placeholder="Pretražite proizvode..."

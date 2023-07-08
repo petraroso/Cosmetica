@@ -1,21 +1,16 @@
 .cardContainer {
   display: flex;
-  min-width: 28rem;
+  min-width: 24rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
   border-radius: 0.1rem;
-}
-.link {
-  text-decoration: none;
-  color: black;
-  align-self: start;
   cursor: pointer;
 }
-.link:hover h4 {
+.cardContainer:hover h4 {
   color: #ff85ba;
 }
 .cardImage {
-  width: 14rem;
-  height: 11rem;
+  width: 12rem;
+  height: 100%;
   object-fit: cover;
 }
 .cardBody {

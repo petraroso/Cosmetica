@@ -25,9 +25,9 @@
   font-weight: bold;
   font-size: 16px;
 }
-.disabledButton{
-  display:none;
+.disabledButton {
+  display: none;
 }
-.buttonsContainer > button:hover{
+.buttonsContainer > button:hover {
   color: #ff85ba;
 }

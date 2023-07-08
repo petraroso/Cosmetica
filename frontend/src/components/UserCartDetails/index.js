@@ -2,10 +2,13 @@ import DeliveryDetails from "../DeliveryDetails";
 //import PaymentMethod from "../PaymentMethod";
 import OrderCartSummary from "../OrderCartSummary";
 import CartProductCard from "../CartProductCard";
+import DeliveryMethod from "../DeliveryMethod";
+import DiscountCode from "../DiscountCode";
 import { useState, useEffect } from "react";
-//import styles from "./style.module.css";
+import styles from "./style.module.css";
 import { useNavigate } from "react-router-dom";
 import PaymentMethod from "../PaymentMethod";
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 export default function UserCartDetails({
   cartItems,
@@ -102,39 +105,78 @@ export default function UserCartDetails({
   };
 
   return (
-    <div style={{ marginLeft: "10%", marginRight: "10%" }}>
-      <DeliveryDetails
-        name={userInfo.name}
-        lastName={userInfo.lastName}
-        address={userAddress.address}
-        zipCode={userAddress.zipCode}
-        city={userAddress.city}
-        country={userAddress.country}
-        phoneNumber={userAddress.phoneNumber}
-        missingAddress={missingAddress}
-      />
-      <hr></hr>
-      <PaymentMethod choosePayment={choosePayment} isPaid={false} />
-      <hr></hr>
-      <div>
-        {cartItems.map((item, idx) => (
-          <CartProductCard
-            item={item}
-            key={idx}
-            removeFromCartHandler={removeFromCartHandler}
-            changeCount={changeCount}
+    <div style={{ marginLeft: "10%", marginRight: "10%", marginTop: "2rem" }}>
+      <h2>KOŠARICA</h2>
+      {cartItems.length === 0 ? (
+        <>
+          <div className={styles.successAlert}>Vaša košarica je prazna</div>
+          <div className={styles.buttonsContainer}>
+            <button
+              className={styles.button}
+              onClick={() => navigate("/product-list")}
+            >
+              Istražite proizvode &nbsp;&nbsp;
+              <BsFillArrowRightCircleFill
+                className={styles.icon}
+                style={{ height: "1.7rem", width: "1.7rem" }}
+              />
+            </button>
+          </div>
+        </>
+      ) : (
+        <>
+          <div>
+            {cartItems.map((item, idx) => (
+              <CartProductCard
+                item={item}
+                key={idx}
+                removeFromCartHandler={removeFromCartHandler}
+                changeCount={changeCount}
+              />
+            ))}
+          </div>
+          <hr></hr>
+          <DeliveryDetails
+            name={userInfo.name}
+            lastName={userInfo.lastName}
+            address={userAddress.address}
+            zipCode={userAddress.zipCode}
+            city={userAddress.city}
+            country={userAddress.country}
+            phoneNumber={userAddress.phoneNumber}
+            missingAddress={missingAddress}
           />
-        ))}
-      </div>
-      <hr></hr>
-      <OrderCartSummary
-        cartSubtotal={cartSubtotal}
-        deliveryMethod={"Metoda 2"}
-        deliveryPrice={"8"}
-        buttonDisabled={buttonDisabled}
-        orderHandler={orderHandler}
-        orderButtonMessage={"Dovršite narudžbu"}
-      />
+          <DeliveryMethod
+            title={"Paket 24"}
+            description={"Isporuka više od 97% paketa za manje od 24 sata."}
+            price={"5"}
+          />
+          <DeliveryMethod
+            title={"DHL"}
+            description={"Isporuka unutar 5 radnih dana."}
+            price={"6"}
+          />
+          <DeliveryMethod
+            title={"Overseas Express"}
+            description={"Isporuka unutar 3 radna dana."}
+            price={"7"}
+          />
+          <hr></hr>
+          <PaymentMethod choosePayment={choosePayment} isPaid={false} />
+          <hr></hr>
+          <DiscountCode />
+
+          <hr></hr>
+          <OrderCartSummary
+            cartSubtotal={cartSubtotal}
+            deliveryMethod={"Metoda 2"}
+            deliveryPrice={"8"}
+            buttonDisabled={buttonDisabled}
+            orderHandler={orderHandler}
+            orderButtonMessage={"Platite narudžbu"}
+          />
+        </>
+      )}
     </div>
   );
 }

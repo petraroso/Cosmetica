@@ -1,16 +1,18 @@
 .footerContainer {
-  padding: 3rem;
+  padding: 0 3rem 3rem 3rem;
   background-color: black;
   color: white;
 }
 .footerContainer > div {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 3rem;
 }
 .title {
   font-weight: bold;

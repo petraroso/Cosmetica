@@ -1,6 +1,26 @@
 .filters {
   display: flex;
   flex-direction: column;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0.1rem;
+  margin: 2rem;
+}
+.filtersLayout {
+  display: flex;
+  flex-wrap: wrap;
+}
+.filterDropdownButton {
+  background-color: black;
+  color: white;
+  margin: 2rem;
+  font-weight: bold;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.filterDropdownButton:hover {
+  cursor: pointer;
+  color: #ff85ba;
 }
 .select {
   outline: 0;
@@ -27,11 +47,11 @@
 }
 .buttonsContainer {
   display: flex;
-  justify-content: center;
+  padding: 2rem;
 }
 .button {
   height: 2rem;
-  margin: 1rem;
+  margin-right: 1rem;
   background-color: black;
   color: white;
   font-weight: bold;
@@ -39,4 +59,12 @@
 .button:hover {
   cursor: pointer;
   color: #ff85ba;
+}
+@media only screen and (max-width: 400px) {
+  .filterDropdownButton {
+    margin: 1rem;
+  }
+  .filters {
+    margin: 1rem;
+  }
 }
