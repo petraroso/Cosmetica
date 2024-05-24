@@ -1,0 +1,38 @@
+.prompt {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+.prompt p {
+  text-align: center;
+}
+.loader {
+  margin: auto;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid black;
+  border-right: 16px solid #ff85ba;
+  border-bottom: 16px solid white;
+  border-left: 16px solid rgba(0, 0, 255, 0.36);
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
