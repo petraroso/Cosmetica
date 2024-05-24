@@ -22,7 +22,7 @@ export default function CarouselComponent({ getBestsellers }) {
   //if bestsellers.length>0 show carousel
   return (
     <div className={styles.carouselContainer}>
-      {bestsellers ? (
+      {bestsellers.length>0 ? (
         <Carousel
           autoPlay
           infiniteLoop
