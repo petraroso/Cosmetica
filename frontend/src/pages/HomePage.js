@@ -3,7 +3,6 @@ import CardsLayout from "../components/CardsLayout";
 import MetaComponent from "../components/MetaComponent";
 import { useSelector } from "react-redux";
 import axios from "axios";
-import Spinner from "../components/Spinner";
 
 const getBestsellers = async () => {
   const { data } = await axios.get("/api/products/bestsellers");
@@ -16,14 +15,8 @@ export default function HomePage() {
     <div>
       <MetaComponent />
       <div>
-        {categories ? (
-          <>
-            <CarouselComponent getBestsellers={getBestsellers} />
-            <CardsLayout categories={categories} />
-          </>
-        ) : (
-          <Spinner />
-        )}
+        <CarouselComponent getBestsellers={getBestsellers} />
+        <CardsLayout categories={categories} />
       </div>
     </div>
   );
