@@ -55,9 +55,11 @@ export default function ListOfProducts({
   return (
     <>
       {loading ? (
-        <h3>Učitavanje proizvoda...</h3>
+        <h3 className={styles.loadingMessage}>Učitavanje proizvoda...</h3>
       ) : error ? (
-        <h3>Greška pri učitavanju proizvoda. Pokušajte ponovo kasnije.</h3>
+        <h3 className={styles.loadingMessage}>
+          Greška pri učitavanju proizvoda. Pokušajte ponovo kasnije.
+        </h3>
       ) : (
         <div className={styles.cardLayout}>
           {currentItems.map((product) => (
