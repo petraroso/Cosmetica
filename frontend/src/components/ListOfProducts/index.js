@@ -8,6 +8,7 @@ import {
   BsFillArrowLeftCircleFill,
   BsFillArrowRightCircleFill,
 } from "react-icons/bs";
+import Spinner from "../Spinner";
 
 export default function ListOfProducts({
   itemsPerPage,
@@ -55,42 +56,44 @@ export default function ListOfProducts({
   return (
     <>
       {loading ? (
-        <h3 className={styles.loadingMessage}>Učitavanje proizvoda...</h3>
+        <Spinner />
       ) : error ? (
         <h3 className={styles.loadingMessage}>
           Greška pri učitavanju proizvoda. Pokušajte ponovo kasnije.
         </h3>
       ) : (
-        <div className={styles.cardLayout}>
-          {currentItems.map((product) => (
-            <ProductCard
-              key={product._id}
-              images={product.images}
-              name={product.name}
-              description={product.description}
-              price={product.price}
-              rating={product.rating}
-              reviewsNumber={product.reviewsNumber}
-              productId={product._id}
-            />
-          ))}
-        </div>
-      )}
+        <>
+          <div className={styles.cardLayout}>
+            {currentItems.map((product) => (
+              <ProductCard
+                key={product._id}
+                images={product.images}
+                name={product.name}
+                description={product.description}
+                price={product.price}
+                rating={product.rating}
+                reviewsNumber={product.reviewsNumber}
+                productId={product._id}
+              />
+            ))}
+          </div>
 
-      <ReactPaginate
-        breakLabel="..."
-        nextLabel={<BsFillArrowRightCircleFill />}
-        onPageChange={handlePageClick}
-        pageRangeDisplayed={5}
-        pageCount={pageCount}
-        previousLabel={<BsFillArrowLeftCircleFill />}
-        renderOnZeroPageCount={null}
-        containerClassName={styles.pagination}
-        pageLinkClassName={styles.pageNum}
-        previousLinkClassName={styles.pageNum}
-        nextLinkClassName={styles.pageNum}
-        activeLinkClassName={styles.active}
-      />
+          <ReactPaginate
+            breakLabel="..."
+            nextLabel={<BsFillArrowRightCircleFill />}
+            onPageChange={handlePageClick}
+            pageRangeDisplayed={5}
+            pageCount={pageCount}
+            previousLabel={<BsFillArrowLeftCircleFill />}
+            renderOnZeroPageCount={null}
+            containerClassName={styles.pagination}
+            pageLinkClassName={styles.pageNum}
+            previousLinkClassName={styles.pageNum}
+            nextLinkClassName={styles.pageNum}
+            activeLinkClassName={styles.active}
+          />
+        </>
+      )}
     </>
   );
 }

@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 .prompt p {
   text-align: center;
