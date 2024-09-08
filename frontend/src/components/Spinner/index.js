@@ -15,7 +15,7 @@ function Spinner() {
           <div className={styles.loader}></div>
         </div>
         <h3>Učitavanje podataka...</h3>
-        <p>Stranica koristi besplatni Render.com servis</p>
+        <p>Pri prvoj upotrebi treba više vremena jer stranica koristi besplatni Render.com servis</p>
       </div>
     )
   );
